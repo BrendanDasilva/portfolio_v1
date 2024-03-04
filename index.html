@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brendan Dasilva - Portfolio</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/images/letter-b.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#portfolio" class="menu-item">PROJECTS</a>
+          <a href="#about" class="menu-item">ABOUT</a>
+          <a href="contact.html" class="menu-item">CONTACT</a>
+          <a
+            href="resume.html"
+            class="menu-item"
+            id="resume-button"
+            target="_blank"
+            >RESUME</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <div class="welcome">
+        <div class="main-header">
+          <h1 class="name">Brendan Dasilva</h1>
+          <h2 class="title">Web Developer and Programmer</h2>
+          <p class="description">
+            I am a passionate web developer specializing in creating dynamic,
+            user-friendly websites and applications. With a strong foundation in
+            programming and a flair for design, I bring ideas to life through
+            powerful, engaging digital experiences.
+          </p>
+        </div>
+      </div>
+
+      <!-- Skillset Section -->
+      <section id="skills" class="skillset-section">
+        <div class="skillset-cards">
+          <!-- Skills List -->
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img src="assets/images/html-file.png" alt="Skill 1" />
+              <h3>HTML</h3>
+            </div>
+            <div class="skill-card">
+              <img src="assets/images/css-file.png" alt="Skill 2" />
+              <h3>CSS</h3>
+            </div>
+            <div class="skill-card">
+              <img src="assets/images/javascript.png" alt="Skill 3" />
+              <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+              <img src="assets/images/php.png" alt="Skill 4" />
+              <h3>PHP</h3>
+            </div>
+            <div class="skill-card">
+              <img src="assets/images/database.png" alt="Skill 5" />
+              <h3>SQL</h3>
+            </div>
+            <div class="skill-card">
+              <img src="assets/images/csharp.png" alt="Skill 6" />
+              <h3>C#</h3>
+            </div>
+            <div class="skill-card">
+              <img src="assets/images/java.png" alt="Skill 7" />
+              <h3>Java</h3>
+            </div>
+            <div class="skill-card">
+              <img src="assets/images/python.png" alt="Skill 8" />
+              <h3>Python</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-project-id="tutorBookingProject">
+            <img
+              src="assets/images/apollostutoringsmall.png"
+              alt="Project 1 Image"
+            />
+            <h3 class="project-card-title">Apollo's On-Call Tutoring</h3>
+            <p>Web project using HTML, CSS, JavaScript, PHP and SQL.</p>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card" data-project-id="milkNHoney">
+            <img src="assets/images/milknhoney.png" alt="Project 2 Image" />
+            <h3 class="project-card-title">Milk n' Honey</h3>
+            <p>Built on Squarespace with designs by TheCastleRose.</p>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-card" data-project-id="csharpWebApp">
+            <img src="assets/images/aspnet1.png" alt="Project 3 Image" />
+            <h3 class="project-card-title">C# Web App</h3>
+            <p>Web Application using ASP.NET framework. HTML, C#.</p>
+          </div>
+          <!-- Project 4 -->
+          <div class="project-card" data-project-id="javaFlightBookingApp">
+            <img src="assets/images/javaflightapp.png" alt="Project 4 Image" />
+            <h3 class="project-card-title">Travel Reservation System</h3>
+            <p>JavaFX Application.</p>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card" data-project-id="quizGameAPI">
+            <img src="assets/images/quizgame.png" alt="Project 5 Image" />
+            <h3 class="project-card-title">Quiz Game</h3>
+            <p>API Quiz Game</p>
+          </div>
+          <!-- Project 6 -->
+          <div class="project-card" data-project-id="game">
+            <img src="assets/images/simon.png" alt="Project 6 Image" />
+            <h3 class="project-card-title">Simon Says Game</h3>
+            <p>A simple game of pattern matching using JavaScript.</p>
+          </div>
+
+          <!--
+          <div class="project-card" data-project-id="forumProject">
+            <img src="assets/images/placeholder.png" alt="Project 7 Image" />
+            <h3>Forum Project</h3>
+            <p>Short description of Project 7...</p>
+          </div>
+          <div class="project-card" data-project-id="pythonProject">
+            <img src="assets/images/placeholder.png" alt="Project 8 Image" />
+            <h3>Python Project</h3>
+            <p>Short description of Project 8...</p>
+          </div>
+          -->
+        </div>
+      </section>
+
+      <!-- Modal Structure -->
+      <div id="projectModal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <div class="modal-body">
+            <div>
+              <h3 id="modalTitle">Project Title</h3>
+              <p id="modalDescription">Project description...</p>
+              <a
+                href=""
+                id="modalGithubLink"
+                target="_blank"
+                class="modal-button"
+                >View on GitHub</a
+              >
+              <a
+                id="modalLiveSiteLink"
+                href="#"
+                target="_blank"
+                class="modal-button"
+                >Visit Live Site</a
+              >
+              <a id="modalMoreLink" href="#" class="modal-button"
+                >More About This Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="about-content">
+          <div class="about-image">
+            <img src="assets/images/about.png" alt="Brendan Dasilva" />
+          </div>
+          <div class="about-text">
+            <h2 class="about-title">About</h2>
+            <p>
+              Back in 2022, I decided a career change was needed after a decade
+              working in the construction industry, first as an in field
+              electrician, then in the office as a Purcahsing Coordinator for an
+              electrical supply company. Growing up I always had a facination
+              with computers, video games and a curiosity for programming.
+            </p>
+            <p>
+              While I did not have much direction in what sort of career I
+              wanted to pivot into, I knew getting started in programming would
+              push me down the right path towards a career I was happy with and
+              something I was truly interested in.
+            </p>
+            <p>
+              When I'm not at my computer, I'm usually hanging out with my wife
+              and three cats, watching professional wrestling or playing a
+              variety of video games.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-contact">
+          <p>
+            Email:<br />
+            brendan.dasilva@gmail.com
+          </p>
+        </div>
+        <!-- Social Media Links with Images -->
+        <div class="footer-social">
+          <a
+            href="https://www.linkedin.com/in/brendan-dasilva-460b862a3/"
+            target="_blank"
+          >
+            <img src="assets/images/linkedin.png" alt="LinkedIn Icon" />
+          </a>
+          <a href="https://github.com/BrendanDasilva" target="_blank">
+            <img src="assets/images/github.png" alt="GitHub Icon" />
+          </a>
+        </div>
+        <div class="footer-nav">
+          <a href="#skills" class="menu-item">SKILLS</a>
+          <a href="#portfolio" class="menu-item">PROJECTS</a>
+          <a href="#about" class="menu-item">ABOUT</a>
+          <a href="contact.html" class="menu-item">CONTACT</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>

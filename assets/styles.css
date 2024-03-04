@@ -1,0 +1,839 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+/* Apply the box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  background-color: #0c1324;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/********** Navbar styles **********/
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  background-color: #112240;
+  width: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav-container {
+  max-width: 1400px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 50px;
+  padding-left: 25px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  letter-spacing: 0.11em;
+}
+
+.menu-item {
+  color: #ccd6f6;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+.menu-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #64ffda;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-item:hover::after {
+  visibility: visible;
+  width: 100%;
+}
+
+.menu-item:hover {
+  color: #64ffda;
+}
+
+#resume-button {
+  border: 2px solid #64ffda;
+}
+
+@media (max-width: 604px) {
+  .navbar {
+    position: relative; /* Override sticky positioning */
+  }
+
+  .logo {
+    display: none; /* Hide the logo */
+  }
+
+  .nav-container {
+    flex-direction: column; /* Stack children (now just the nav-links) vertically */
+    align-items: center; /* Center-align the children horizontally */
+    text-align: center; /* Ensure text and inline elements within are centered */
+    height: 225px;
+  }
+
+  .nav-links {
+    width: 100%; /* Allow nav-links to take full width for better control */
+    display: flex;
+    margin: 10px 0;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center-align the links */
+    gap: 10px; /* Add space between each link */
+  }
+
+  .menu-item {
+    width: auto; /* Allow each link to size according to its content */
+    padding: 10px; /* Add padding for better touch targets */
+    text-align: center; /* Ensure text within each link is centered */
+  }
+}
+
+/********** Main content container styles **********/
+.main-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.welcome {
+  flex-grow: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: flex-start;
+}
+
+@media (max-width: 604px) {
+  .welcome {
+    padding: 10px;
+  }
+
+  #portfolio {
+    padding: 0;
+  }
+
+  #about {
+    padding: 0;
+  }
+}
+
+.main-header {
+  font-size: 1.5em;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 0;
+  text-align: left;
+}
+
+.title {
+  color: #64ffda;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.name {
+  margin: 0;
+  color: #c1cbf4;
+  font-size: 4rem;
+  font-weight: 200;
+  margin-top: 40px;
+}
+
+@media (max-width: 644px) {
+  .name {
+    line-height: 1em;
+    margin: 40px 0;
+  }
+}
+
+.description {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+/********** Skillset Section **********/
+.skillset-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+}
+
+.skillset-cards {
+  max-width: 1200px;
+  width: 95%;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 20px;
+}
+
+.skill-card {
+  background-color: #0c1324;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.skill-card img {
+  max-width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.skill-card h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive adjustments for tablets and smartphones */
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/********** Portfolio Section /**********/
+.portfolio-section {
+  padding: 60px;
+  margin-bottom: 60px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.portfolio-grid div {
+  background-color: #112240;
+}
+
+.project-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px #64ffda;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  margin: 16px 0;
+}
+
+.project-card-title {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.project-card h3,
+p {
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/********** Portfolio Modals **********/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  line-height: 1.5em;
+  color: #0c1324;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalTitle {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#modalDescription {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.modal-content p {
+  color: #000;
+}
+
+.close-button {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  justify-content: center;
+  width: 100%;
+}
+
+.modal-body div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-link-button,
+.modal-button {
+  display: inline-flex;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 5px;
+  background-color: #0c1324;
+  color: white;
+  padding: 10px 20px;
+  margin: 44px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.modal-button:hover {
+  background-color: #90ade0;
+}
+
+@media (max-width: 1118px) {
+  .modal-content {
+    width: 75%;
+  }
+}
+@media (max-width: 670px) {
+  .modal-content {
+    width: 85%;
+  }
+}
+
+/********** About Section **********/
+.about-section {
+  color: #fff;
+  padding: 40px;
+  background-color: #15223e;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+}
+
+.about-title {
+  color: #64ffda;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-text,
+p {
+  line-height: 1.8em;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  margin-right: 25px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text,
+  .about-image {
+    max-width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .about-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .about-text h2 {
+    margin-top: 20px;
+  }
+}
+
+/********** Contact Page **********/
+.contact-section {
+  padding: 40px;
+  background-color: #112240;
+}
+
+.contact-header {
+  width: 800px;
+  padding: 40px;
+  margin: auto;
+}
+
+.contact-title {
+  color: #64ffda;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  padding: 20px 0;
+}
+
+.contact-description {
+  letter-spacing: 0.024em;
+}
+
+.contact-section h2 {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #112240;
+  color: white;
+}
+
+/********** Footer Section Styles **********/
+.footer-section {
+  background-color: #0c1324;
+  color: #ccd6f6;
+  padding: 20px 0;
+  font-size: 0.9em;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-container div {
+  margin: 10px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.footer-social a {
+  display: inline-flex;
+  margin: 0 10px;
+}
+
+.footer-social a img {
+  height: 30px;
+  width: auto;
+}
+
+.footer-nav a {
+  color: #ccd6f6;
+  text-decoration: none;
+  gap: 20px;
+  font-weight: bold;
+  letter-spacing: 0.11em;
+}
+
+.footer-nav a:hover {
+  color: #64ffda;
+}
+
+.footer-legal {
+  text-align: center;
+  width: 100%;
+}
+
+/* Footer email hide on screens smaller than 796px */
+@media (max-width: 796px) {
+  .footer-contact {
+    display: none;
+  }
+
+  .footer-social,
+  .footer-nav {
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+/* Center footer nav links horizontally on screens smaller than 631px */
+@media (max-width: 631px) {
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .footer-nav a {
+    text-align: center;
+    margin: 5px 15px;
+  }
+}
+
+/********** PROJECTS PAGES **********/
+.project-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.project-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.project-container .header h1 {
+  flex: 1;
+  color: #64ffda;
+  text-transform: uppercase;
+}
+
+.project-container .tech-stack {
+  display: flex;
+  align-items: center;
+}
+
+.project-container .tech-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.project-container .tech-item img {
+  max-width: 40px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.custom-link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  letter-spacing: 0.1em;
+}
+
+.project-buttons {
+  margin-top: 50px;
+}
+
+.github-button {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.github-button:hover {
+  background-color: #112240;
+  color: white;
+}
+
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10vh;
+}
+
+.image-modal-content {
+  display: block;
+  width: auto;
+  max-width: 80%;
+  max-height: 90vh;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-modal .close {
+  position: fixed;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.image-modal .close:hover {
+  color: #ccc;
+}
+
+/* Two Columns Setup */
+.main-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px 50px 25px;
+}
+
+.left-column {
+  flex: 1;
+  overflow-y: auto;
+  height: 80vh;
+  max-width: 50%;
+}
+
+.right-column {
+  flex: 1;
+  padding: 0 20px;
+  max-width: 50%;
+}
+
+.left-column img {
+  width: 100%;
+}
+
+.project-description,
+.right-column * {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.project-image:hover {
+  cursor: pointer;
+  scale: 1.025;
+}
+
+.project-footer-section {
+  background-color: black;
+  color: #ccd6f6;
+  padding: 20px 0;
+  font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 840px) {
+  .project-container .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-container .tech-stack {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project-container .tech-item {
+    margin: 10px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .project-description p {
+    margin: 0;
+  }
+
+  .left-column,
+  .right-column {
+    max-width: 100%;
+  }
+
+  .left-column {
+    order: 2;
+    margin: 20px;
+  }
+
+  .right-column {
+    order: 1;
+    padding-top: 0;
+  }
+
+  .image-modal-content {
+    max-width: 95%;
+  }
+}
+
+.resume-content {
+  text-align: center;
+  height: 75vh;
+}
