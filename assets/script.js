@@ -91,10 +91,10 @@ const projectDetails = {
     imgSrc: "assets/images/doughevtile.png",
     title: "Dough EV",
     description:
-      "In this collaborative project, our goal was to transfer the design of the clients previously built Squarespace website to a more business suitable platform with Sociavore.",
+      "In this collaborative project, our goal was to re-create an online presence for a donut shop in London, ON. The site was initially built on Squarespace but ultimatley needed an update to a more suitable platform in Sociavore for its ease of use and its better built-in ecommerce capabilities, specifically for a bakery. My role was focused on customizing the website to align with TheCastleRose's creative vision from the previous site, involving a mix of Sociavore's native functionalities and supplimental coding in CSS to tailor the site's aesthetics and user interaction.",
     pageLink: "projects/doughev.html",
   },
-  // doughev: {
+  // milknhoney: {
   //   imgSrc: "assets/images/milknhoney.png",
   //   title: "Dough EV",
   //   description: "In this collaborative project, our goal was to create an online presence for a small personal business, focusing on selling handcrafted items. We chose Squarespace for its ease of use and its built-in ecommerce capabilities. My role was particularly focused on customizing the website to align with TheCastleRose's creative vision, involving a mix of Squarespace's native functionalities and supplimental coding in CSS to tailor the site's aesthetics and user interaction. \n\n The challenge with this project was in seamlessly incorporating these custom designs into Squarespace's framework, ensuring the website remained responsive and user-friendly across all devices. This required detailed testing and tweaking to get everything just right. The site is designed to be engaging and intuitive, featuring a visually appealing homepage, an extensive catalog of products with detailed descriptions and images, and a straightforward navigation system to enhance the shopping experience. \n\nThis project has been a valuable opportunity to demonstrate my skills in working with CMS platforms and applying custom design elements in a team setting, aiming for a balance between visual appeal and functional efficiency. \n\nThis site is still currently a work in progress and a live view is unavailable.",
