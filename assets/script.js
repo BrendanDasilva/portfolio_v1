@@ -87,13 +87,19 @@ const projectDetails = {
       "This project involved creating a comprehensive forum platform from scratch, focusing on PHP and MySQL for the backend, with a responsive front-end design using HTML, CSS, and JavaScript. Features include user registration/login, thread creation, commenting, and an admin panel for user and content management.",
     githubLink: "https://github.com/BrendanDasilva",
   },
-  milkNHoney: {
-    imgSrc: "assets/images/milknhoney.png",
-    title: "Milk n' Honey",
+  doughev: {
+    imgSrc: "assets/images/doughevtile.png",
+    title: "Dough EV",
     description:
-      "In this collaborative project, our goal was to create an online presence for a small personal business, focusing on selling handcrafted items. We chose Squarespace for its ease of use and its built-in ecommerce capabilities. My role was particularly focused on customizing the website to align with TheCastleRose's creative vision, involving a mix of Squarespace's native functionalities and supplimental coding in CSS to tailor the site's aesthetics and user interaction.\n\nThis site is still currently a work in progress and a live view is unavailable.",
-    pageLink: "projects/milknhoney.html",
+      "In this collaborative project, our goal was to transfer the design of the clients previously built Squarespace website to a more business suitable platform with Sociavore.",
+    pageLink: "projects/doughev.html",
   },
+  // doughev: {
+  //   imgSrc: "assets/images/milknhoney.png",
+  //   title: "Dough EV",
+  //   description: "In this collaborative project, our goal was to create an online presence for a small personal business, focusing on selling handcrafted items. We chose Squarespace for its ease of use and its built-in ecommerce capabilities. My role was particularly focused on customizing the website to align with TheCastleRose's creative vision, involving a mix of Squarespace's native functionalities and supplimental coding in CSS to tailor the site's aesthetics and user interaction. \n\n The challenge with this project was in seamlessly incorporating these custom designs into Squarespace's framework, ensuring the website remained responsive and user-friendly across all devices. This required detailed testing and tweaking to get everything just right. The site is designed to be engaging and intuitive, featuring a visually appealing homepage, an extensive catalog of products with detailed descriptions and images, and a straightforward navigation system to enhance the shopping experience. \n\nThis project has been a valuable opportunity to demonstrate my skills in working with CMS platforms and applying custom design elements in a team setting, aiming for a balance between visual appeal and functional efficiency. \n\nThis site is still currently a work in progress and a live view is unavailable.",
+  //   pageLink: "projects/milknhoney.html",
+  // },
   csharpWebApp: {
     imgSrc: "assets/images/aspnet1.png",
     title: "C# Web App",
