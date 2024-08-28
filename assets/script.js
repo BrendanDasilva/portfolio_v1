@@ -78,7 +78,7 @@ const projectDetails = {
     description:
       "Apollo's On-Call Tutoring was a second year Advanced Web Development project. We were tasked with designing and building a functional tutoring website using HTML, CSS, JavaScript, PHP, and SQL. This site features the ability for tutors to sign up and create a profile, as well as a feature that triggers their availability along with providing a video chat link to prospective students. Students can visit the site, see what tutors are available and fill out a quick form to request a session.",
     githubLink: "https://github.com/BrendanDasilva/TutorBooking",
-    pageLink: "projects/apollosoncall",
+    pageLink: "projects/ApollosOnCall",
   },
   trapperKeeperProject: {
     imgSrc: "assets/images/tk-homepage.png",
@@ -86,14 +86,14 @@ const projectDetails = {
     description:
       "This summer project was a personal initiative I worked on between semesters to enhance my skills in React and prepare for the upcoming semester. The project features a collection of functional apps including a To-Do List, Notes, Weather Tracker, Pomodoro Timer, and more. Throughout this project, I explored various aspects of React, state management, and UI/UX design, continually refining my knowledge and practical coding skills.",
     githubLink: "https://github.com/BrendanDasilva",
-    pageLink: "projects/trapperkeeperapp",
+    pageLink: "projects/TrapperKeeperApp",
   },
   doughev: {
     imgSrc: "assets/images/doughevtile.png",
     title: "Dough EV",
     description:
       "In this collaborative project, our goal was to re-create an online presence for a donut shop in London, ON. The site was initially built on Squarespace but ultimatley needed an update to a more suitable platform in Sociavore for its ease of use and its better built-in ecommerce capabilities, specifically for a bakery. My role was focused on customizing the website to align with TheCastleRose's creative vision from the previous site, involving a mix of Sociavore's native functionalities and supplimental coding in CSS to tailor the site's aesthetics and user interaction.",
-    pageLink: "projects/doughev",
+    pageLink: "projects/DoughEV",
   },
   // milknhoney: {
   //   imgSrc: "assets/images/milknhoney.png",
@@ -115,15 +115,15 @@ const projectDetails = {
     description:
       "The Flight Reservation App, was developed as part of a JavaFX project for our second year Application Development using Java class. It's built around three main parts: Flight, Passenger, and Booking. The Flight class handles all the flight details like where it's going, when, and how much it costs. It makes sure all this information is correct and makes sense, like making sure the flight date is in the future. The Passenger class keeps track of the people flying, including important details like their name and passport number, and checks to make sure this information is properly filled out.",
     githubLink: "https://github.com/BrendanDasilva/JavaFX-FlightApp",
-    pageLink: "projects/javaflightapp",
+    pageLink: "projects/JavaFlightApp",
   },
-  pythonProject: {
-    imgSrc: "assets/images/placeholder.png",
-    title: "Python Data Analysis Project",
-    description:
-      "This project involved developing a Python application for data analysis, demonstrating proficiency in Python programming, data manipulation and analysis libraries like Pandas and NumPy, and data visualization with Matplotlib. The application provides insights into datasets through various analytical techniques.",
-    githubLink: "https://github.com/BrendanDasilva",
-  },
+  // pythonProject: {
+  //   imgSrc: "assets/images/placeholder.png",
+  //   title: "Python Data Analysis Project",
+  //   description:
+  //     "This project involved developing a Python application for data analysis, demonstrating proficiency in Python programming, data manipulation and analysis libraries like Pandas and NumPy, and data visualization with Matplotlib. The application provides insights into datasets through various analytical techniques.",
+  //   githubLink: "https://github.com/BrendanDasilva",
+  // },
   quizGameAPI: {
     imgSrc: "assets/images/quizgame.png",
     title: "Quiz Game Utilizing API",
@@ -141,7 +141,7 @@ const projectDetails = {
       "The Simon Game project is a web-based adaptation of the classic memory game, designed to test and enhance memory skills through a sequence of lights and sounds. Built using HTML, CSS, and JavaScript, including jQuery for interactive elements, this project demonstrates my ability to create engaging and intuitive user interfaces. The game starts at level zero and progressively increases in difficulty by extending the sequence of lights and sounds the player must memorize and replicate.",
     githubLink: "https://github.com/BrendanDasilva/Games",
     // liveSiteLink: "https://brendandasilva.github.io/Games/SimonGame/index.html",
-    pageLink: "projects/simon",
+    pageLink: "projects/Simon",
   },
 };
 
