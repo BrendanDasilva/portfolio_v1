@@ -78,26 +78,26 @@ const projectDetails = {
     description:
       "Apollo's On-Call Tutoring was a second year Advanced Web Development project. We were tasked with designing and building a functional tutoring website using HTML, CSS, JavaScript, PHP, and SQL. This site features the ability for tutors to sign up and create a profile, as well as a feature that triggers their availability along with providing a video chat link to prospective students. Students can visit the site, see what tutors are available and fill out a quick form to request a session.",
     githubLink: "https://github.com/BrendanDasilva/TutorBooking",
-    pageLink: "projects/apollosoncall.html",
+    pageLink: "projects/apollosoncall",
   },
   trapperKeeperProject: {
     imgSrc: "assets/images/tk-homepage.png",
     title: "Trapper Keeper Project",
     description:
       "This summer project was a personal initiative I worked on between semesters to enhance my skills in React and prepare for the upcoming semester. The project features a collection of functional apps including a To-Do List, Notes, Weather Tracker, Pomodoro Timer, and more. Throughout this project, I explored various aspects of React, state management, and UI/UX design, continually refining my knowledge and practical coding skills.",
-    githubLink: "https://github.com/BrendanDasilva/trapperkeeperapp",
-    pageLink: "projects/trapperkeeper.html",
+    githubLink: "https://github.com/BrendanDasilva",
+    pageLink: "projects/trapperkeeperapp",
   },
   doughev: {
     imgSrc: "assets/images/doughevtile.png",
     title: "Dough EV",
     description:
       "In this collaborative project, our goal was to re-create an online presence for a donut shop in London, ON. The site was initially built on Squarespace but ultimatley needed an update to a more suitable platform in Sociavore for its ease of use and its better built-in ecommerce capabilities, specifically for a bakery. My role was focused on customizing the website to align with TheCastleRose's creative vision from the previous site, involving a mix of Sociavore's native functionalities and supplimental coding in CSS to tailor the site's aesthetics and user interaction.",
-    pageLink: "projects/doughev.html",
+    pageLink: "projects/doughev",
   },
   // milknhoney: {
   //   imgSrc: "assets/images/milknhoney.png",
-  //   title: "Dough EV",
+  //   title: "Milk n Honey",
   //   description: "In this collaborative project, our goal was to create an online presence for a small personal business, focusing on selling handcrafted items. We chose Squarespace for its ease of use and its built-in ecommerce capabilities. My role was particularly focused on customizing the website to align with TheCastleRose's creative vision, involving a mix of Squarespace's native functionalities and supplimental coding in CSS to tailor the site's aesthetics and user interaction. \n\n The challenge with this project was in seamlessly incorporating these custom designs into Squarespace's framework, ensuring the website remained responsive and user-friendly across all devices. This required detailed testing and tweaking to get everything just right. The site is designed to be engaging and intuitive, featuring a visually appealing homepage, an extensive catalog of products with detailed descriptions and images, and a straightforward navigation system to enhance the shopping experience. \n\nThis project has been a valuable opportunity to demonstrate my skills in working with CMS platforms and applying custom design elements in a team setting, aiming for a balance between visual appeal and functional efficiency. \n\nThis site is still currently a work in progress and a live view is unavailable.",
   //   pageLink: "projects/milknhoney.html",
   // },
@@ -107,7 +107,7 @@ const projectDetails = {
     description:
       "Developed for Web Application Development class, this project is a fully functional travel booking website built using ASP.NET. It demonstrates my skills in C#, .NET frameworks, and SQL Server, incorporating functionalities like flight and hotel bookings. Part 2 of this assignment will see us implement user accounts, API and further optimization.",
     githubLink: "https://github.com/BrendanDasilva/Travel-Booking-Project",
-    pageLink: "projects/aspnet1.html",
+    pageLink: "projects/ASPdotnet",
   },
   javaFlightBookingApp: {
     imgSrc: "assets/images/javaflightapp.png",
@@ -115,7 +115,7 @@ const projectDetails = {
     description:
       "The Flight Reservation App, was developed as part of a JavaFX project for our second year Application Development using Java class. It's built around three main parts: Flight, Passenger, and Booking. The Flight class handles all the flight details like where it's going, when, and how much it costs. It makes sure all this information is correct and makes sense, like making sure the flight date is in the future. The Passenger class keeps track of the people flying, including important details like their name and passport number, and checks to make sure this information is properly filled out.",
     githubLink: "https://github.com/BrendanDasilva/JavaFX-FlightApp",
-    pageLink: "projects/javaflightapp.html",
+    pageLink: "projects/javaflightapp",
   },
   pythonProject: {
     imgSrc: "assets/images/placeholder.png",
@@ -132,7 +132,7 @@ const projectDetails = {
     githubLink: "https://github.com/BrendanDasilva/Games",
     // liveSiteLink:
     //   "https://brendandasilva.github.io/Games/APIQuizGame/index.html",
-    pageLink: "projects/apiquizgame.html",
+    pageLink: "projects/APIQuizGame",
   },
   game: {
     imgSrc: "assets/images/simon.png",
@@ -141,7 +141,7 @@ const projectDetails = {
       "The Simon Game project is a web-based adaptation of the classic memory game, designed to test and enhance memory skills through a sequence of lights and sounds. Built using HTML, CSS, and JavaScript, including jQuery for interactive elements, this project demonstrates my ability to create engaging and intuitive user interfaces. The game starts at level zero and progressively increases in difficulty by extending the sequence of lights and sounds the player must memorize and replicate.",
     githubLink: "https://github.com/BrendanDasilva/Games",
     // liveSiteLink: "https://brendandasilva.github.io/Games/SimonGame/index.html",
-    pageLink: "projects/simon.html",
+    pageLink: "projects/simon",
   },
 };
 
