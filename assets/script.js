@@ -80,12 +80,13 @@ const projectDetails = {
     githubLink: "https://github.com/BrendanDasilva/TutorBooking",
     pageLink: "projects/apollosoncall.html",
   },
-  forumProject: {
-    imgSrc: "assets/images/placeholder.png",
-    title: "Forum Project",
+  trapperKeeperProject: {
+    imgSrc: "assets/images/tk-homepage.png",
+    title: "Trapper Keeper Project",
     description:
-      "This project involved creating a comprehensive forum platform from scratch, focusing on PHP and MySQL for the backend, with a responsive front-end design using HTML, CSS, and JavaScript. Features include user registration/login, thread creation, commenting, and an admin panel for user and content management.",
+      "This summer project was a personal initiative I worked on between semesters to enhance my skills in React and prepare for the upcoming semester. The project features a collection of functional apps including a To-Do List, Notes, Weather Tracker, Pomodoro Timer, and more. Throughout this project, I explored various aspects of React, state management, and UI/UX design, continually refining my knowledge and practical coding skills.",
     githubLink: "https://github.com/BrendanDasilva",
+    pageLink: "projects/trapperkeeper.html",
   },
   doughev: {
     imgSrc: "assets/images/doughevtile.png",
