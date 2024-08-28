@@ -85,7 +85,7 @@ const projectDetails = {
     title: "Trapper Keeper Project",
     description:
       "This summer project was a personal initiative I worked on between semesters to enhance my skills in React and prepare for the upcoming semester. The project features a collection of functional apps including a To-Do List, Notes, Weather Tracker, Pomodoro Timer, and more. Throughout this project, I explored various aspects of React, state management, and UI/UX design, continually refining my knowledge and practical coding skills.",
-    githubLink: "https://github.com/BrendanDasilva",
+    githubLink: "https://github.com/BrendanDasilva/trapperkeeperapp",
     pageLink: "projects/TrapperKeeperApp",
   },
   doughev: {
