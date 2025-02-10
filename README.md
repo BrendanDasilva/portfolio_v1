@@ -1,6 +1,6 @@
 # This was V1 of my portfolio - developed between year 2 and year 3. 
 
-## V2 is currently in the early stages of being developed for January '25, in order to be prepped and ready to jump on job listings as I finish up my final semester.
+## V2 has been launched and this is now only for archive purposes. 
 
 ## This was my simple landing page:
 ![screencapture-brendandasilva-github-io-portfolio-v1-2024-12-11-09_49_57](https://github.com/user-attachments/assets/75b493e9-41dc-4e84-9518-1d15f5021993)
